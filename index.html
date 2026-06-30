@@ -319,7 +319,7 @@
     /* ─── Global Focus-Blur Hover System ────────────────────── */
 
     body.has-focused .interactive-block:not(.focused) {
-      filter: blur(6px) brightness(0.3);
+      filter: brightness(0.3);
       opacity: 0.3;
       transform: scale(0.96);
     }
@@ -3003,7 +3003,7 @@
         clearCardFocus();
         document.body.classList.add('has-focused');
         card.classList.add('focused');
-        canvas.style.filter = 'blur(6px) opacity(0.15)';
+        canvas.style.filter = 'opacity(0.15)';
       });
     });
 
